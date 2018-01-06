@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kitten</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="media.css">
+
+<style media="screen">
+
+
+body {
+  background:url("img/dawn.png")no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+img {
+  width: 90%;
+}
+
+.kitten-image {
+  text-align: center;
+  position:absolute;
+  bottom:5px;
+  left: 20%;
+  right: 20%;
+}
+
+@media all and (max-width: 880px) {
+    body {
+          background-image:url(img/sunny-day.jpg);
+    }
+    img {
+      content:url("img/kitten-medium.png");
+    }
+}
+
+@media all and (max-width: 540px) {
+    body {
+          background-image:url(img/night.jpg);
+    }
+    img {
+      content:url("img/kitten-small.png");
+    }
+}
+
+</style>
+
+</head>
+<body>
+  <section class="kitten-image">
+    <img src="img/kitten-large.png" alt="">
+  </section>
+</body>
+</html>
